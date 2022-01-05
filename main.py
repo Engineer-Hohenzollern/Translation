@@ -4,9 +4,9 @@ from googletrans import Translator # try pip install googletrans==4.0.0-rc1, if 
 d = docx.Document('thai.docx')  # to open the document containing the promotional content
 
 translator = Translator()
-i = d.paragraphs  # i return's a list of object where in each of this object contains string of the paragraphs
-# elements in the Word document we can access them in str form by .text attribute
-# to be more specific  d.paragraphs[list_element].text
+i = d.paragraphs  # i return's a list of object where in each of this object contains string the paragraph elements
+#  in the Word document we can access them in string form by  d.paragraphs[list_element].text 
+
 i = len(i)  # inorder to get the number of paragraphs in word document, so we can iterate in for loop
 
 newd = docx.Document()  # we're creating a new Word document for the translated text
